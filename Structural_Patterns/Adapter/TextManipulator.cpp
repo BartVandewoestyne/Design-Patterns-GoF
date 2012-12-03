@@ -1,6 +1,7 @@
 #include "TextManipulator.h"
-#include "TextShape.h"
 
-TextManipulator::TextManipulator(TextShape& s)
+class TextShape;
+
+TextManipulator::TextManipulator(const TextShape* s)
 {
 }

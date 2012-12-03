@@ -1,5 +1,4 @@
 #include "TextView.h"
-#include "Coord.h"
 
 TextView::TextView()
 {}

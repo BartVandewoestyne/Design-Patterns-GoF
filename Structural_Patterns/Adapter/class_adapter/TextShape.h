@@ -1,10 +1,11 @@
 #ifndef TEXTSHAPE_H
 #define TEXTSHAPE_H
 
-#include "Manipulator.h"
 #include "Point.h"
 #include "Shape.h"
 #include "TextView.h"
+
+class Manipulator;
 
 class TextShape : public Shape, private TextView {
 public:

@@ -1,6 +1,9 @@
 #ifndef SHAPE_H
 #define SHAPE_H
 
+class Point;
+class Manipulator;
+
 class Shape {
 public:
     Shape();
