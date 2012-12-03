@@ -1,0 +1,4 @@
+add_subdirectory(parameterized_factory_methods)
+add_subdirectory(sample_code)
+add_subdirectory(templates_to_avoid_subclassing)
+add_subdirectory(with_lazy_evaluation)
