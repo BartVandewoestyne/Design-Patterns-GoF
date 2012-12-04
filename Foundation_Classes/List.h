@@ -1,6 +1,8 @@
 #ifndef LIST_H
 #define LIST_H
 
+#include "Iterator.h"
+
 const long DEFAULT_LIST_CAPACITY = 200;
 
 template <class Item>
