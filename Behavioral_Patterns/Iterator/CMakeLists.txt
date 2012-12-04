@@ -5,6 +5,6 @@ set(iterator_SRCS
 
 add_library(iterator SHARED ${iterator_SRCS})
 
-add_executable(iterator1 main.cpp)
+add_executable(iterator1 iterator1.cpp)
 
 target_link_libraries(iterator1 iterator)

@@ -14,7 +14,13 @@ void PrintEmployees (Iterator<Employee*>& i) {
 int main()
 {
     List<Employee*>* employees;
-    // ...
+
+    // Add some employees to the List.
+    employees = new List<Employee*>;
+    employees->Append(new Employee);
+    employees->Append(new Employee);
+    employees->Append(new Employee);
+
     ListIterator<Employee*> forward(employees);
     ReverseListIterator<Employee*> backward(employees);
 

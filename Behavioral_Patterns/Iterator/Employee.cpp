@@ -4,5 +4,5 @@
 
 void Employee::Print() const
 {
-  std::cout << "Employee::Print()" << std::endl;
+  std::cout << "Employee " << this << std::endl;
 }
