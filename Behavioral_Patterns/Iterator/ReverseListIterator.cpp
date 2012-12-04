@@ -1,5 +1,3 @@
-#include "ReverseListIterator.h"
-
 template <class Item>
 ReverseListIterator<Item>::ReverseListIterator (
     const List<Item>* aList
@@ -24,7 +22,7 @@ bool ReverseListIterator<Item>::IsDone () const {
 template <class Item>
 Item ReverseListIterator<Item>::CurrentItem () const {
     if (IsDone()) {
-        throw IteratorOutOfBounds;
+        //throw IteratorOutOfBounds; // TODO
     }
     return _list->Get(_current);
 }

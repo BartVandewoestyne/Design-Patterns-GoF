@@ -1,3 +1,9 @@
+#ifndef LIST_ITERATOR_H
+#define LIST_ITERATOR_H
+
+#include "Iterator.h"
+#include "List.h"
+
 template <class Item>
 class ListIterator : public Iterator<Item> {
 public:
@@ -11,3 +17,7 @@ private:
     const List<Item>* _list;
     long _current;
 };
+
+#include "ListIterator.cpp"
+
+#endif /* LIST_ITERATOR_H */

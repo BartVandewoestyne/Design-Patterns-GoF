@@ -1,7 +1,7 @@
 #ifndef LIST_H
 #define LIST_H
 
-const long DEFAULT_LIST_CAPACITY = 1000;
+const long DEFAULT_LIST_CAPACITY = 200;
 
 template <class Item>
 class List {
@@ -28,6 +28,18 @@ public:
     Item& Top() const;
     void Push(const Item&);
     Item& Pop();
+
+    Iterator<Item>* CreateIterator() const;
+
+private:
+    void RemoveAt(long index);
+  
+private:
+    Item* _items; 
+    long _size; 
+    long _count; 
 };
+
+#include "List.cpp"
 
 #endif /* LIST_H */

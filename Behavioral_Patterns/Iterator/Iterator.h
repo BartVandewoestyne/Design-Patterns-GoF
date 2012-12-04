@@ -1,3 +1,6 @@
+#ifndef ITERATOR_H
+#define ITERATOR_H
+
 template <class Item>
 class Iterator {
 public:
@@ -8,3 +11,9 @@ public:
 protected:
     Iterator();
 };
+
+template <class Item>
+Iterator<Item>::Iterator()
+{}
+
+#endif /* ITERATOR_H */

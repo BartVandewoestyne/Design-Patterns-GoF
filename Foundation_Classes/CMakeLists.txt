@@ -1,5 +1,6 @@
+include_directories(../Behavioral_Patterns/Iterator)
+
 set(foundation_classes_SRCS
-    List.cpp
     Point.cpp
     Rect.cpp)
 

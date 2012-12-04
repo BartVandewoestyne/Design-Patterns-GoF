@@ -1,5 +1,3 @@
-#include "ListIterator.h"
-
 template <class Item>
 ListIterator<Item>::ListIterator (
     const List<Item>* aList
@@ -24,7 +22,7 @@ bool ListIterator<Item>::IsDone () const {
 template <class Item>
 Item ListIterator<Item>::CurrentItem () const {
     if (IsDone()) {
-        throw IteratorOutOfBounds;
+        //throw IteratorOutOfBounds; // TODO
     }
     return _list->Get(_current);
 }
