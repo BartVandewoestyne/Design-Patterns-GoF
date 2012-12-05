@@ -5,7 +5,14 @@
 
 using namespace std;
 
+
 typedef float Coord;
+
+Coord min(Coord x, Coord y);
+Coord max(Coord x, Coord y);
+Coord abs(Coord x);
+int round(Coord x);
+
 
 class Point {
 public:
