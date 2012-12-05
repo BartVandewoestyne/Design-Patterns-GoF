@@ -7,10 +7,11 @@ set(abstract_factory_SRCS
     Maze.cpp
     MazeFactory.cpp
     MazeGame.cpp
-    Room.cpp
     RoomWithABomb.cpp)
+
+include_directories(../)
 
 add_library(abstract_factory SHARED ${abstract_factory_SRCS})
 
 add_executable(abstract_factory1 main.cpp)
-target_link_libraries(abstract_factory1 abstract_factory)
+target_link_libraries(abstract_factory1 abstract_factory creational_patterns)
