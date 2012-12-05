@@ -1,3 +1,8 @@
+#ifndef WINDOW_IMP_H
+#define WINDOW_IMP_H
+
+#include "Point.h"
+
 class WindowImp {
 public:
     virtual void ImpTop() = 0;
@@ -12,3 +17,5 @@ public:
 protected:
     WindowImp();
 };
+
+#endif /* WINDOW_IMP */

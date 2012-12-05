@@ -1,3 +1,5 @@
+#include "PMWindowImp.h"
+
 void PMWindowImp::DeviceRect (
     Coord x0, Coord y0, Coord x1, Coord y1
 ) {

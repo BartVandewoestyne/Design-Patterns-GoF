@@ -1,6 +1,8 @@
 #ifndef ICONWINDOW_H
 #define ICONWINDOW_H
 
+#include "Window.h"
+
 class IconWindow : public Window {
 public:
     // ...

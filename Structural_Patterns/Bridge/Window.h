@@ -1,3 +1,11 @@
+#ifndef WINDOW_H
+#define WINDOW_H
+
+#include "View.h"
+
+class Point;
+class WindowImp;
+
 class Window {
 public:
     Window(View* contents);
@@ -29,3 +37,5 @@ private:
     WindowImp* _imp;
     View* _contents; // the window's contents
 };
+
+#endif /* WINDOW_H */

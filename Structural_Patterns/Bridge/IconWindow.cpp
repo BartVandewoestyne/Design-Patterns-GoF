@@ -1,4 +1,5 @@
 #include "IconWindow.h"
+#include "WindowImp.h"
 
 void IconWindow::DrawContents() {
     WindowImp* imp = GetWindowImp();
