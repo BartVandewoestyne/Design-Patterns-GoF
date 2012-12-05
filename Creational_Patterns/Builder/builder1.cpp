@@ -1,5 +1,8 @@
+#include <iostream>
 #include "MazeGame.h"
 #include "StandardMazeBuilder.h"
+
+using namespace std;
 
 class Maze;
 
@@ -11,4 +14,6 @@ int main()
 
   game.CreateMaze(builder);
   maze = builder.GetMaze();
+
+  cout << maze << endl;
 }

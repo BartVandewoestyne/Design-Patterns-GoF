@@ -6,8 +6,8 @@ class Maze;
 class MazeBuilder {
 public:
     virtual void BuildMaze() { }
-    virtual void BuildRoom(int room) { }
-    virtual void BuildDoor(int roomFrom, int roomTo) { }
+    virtual void BuildRoom(int) { }
+    virtual void BuildDoor(int, int) { }
 
     virtual Maze* GetMaze() { return 0; }
 protected:
