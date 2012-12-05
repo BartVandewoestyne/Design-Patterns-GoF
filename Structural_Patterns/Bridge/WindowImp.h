@@ -1,6 +1,7 @@
 #ifndef WINDOW_IMP_H
 #define WINDOW_IMP_H
 
+#include "Coord.h"
 #include "Point.h"
 
 class WindowImp {

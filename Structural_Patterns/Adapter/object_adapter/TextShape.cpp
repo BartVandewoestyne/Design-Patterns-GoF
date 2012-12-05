@@ -1,6 +1,7 @@
 #include "TextShape.h"
 
 #include "Manipulator.h"
+#include "Coord.h"
 #include "Point.h"
 #include "TextView.h"
 #include "TextManipulator.h"

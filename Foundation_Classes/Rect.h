@@ -1,6 +1,7 @@
 #ifndef RECT_H
 #define RECT_H
 
+#include "Coord.h"
 #include "Point.h"
 
 class Rect {

@@ -1,7 +1,7 @@
 #ifndef TEXTVIEW_H
 #define TEXTVIEW_H
 
-#include "Point.h"
+#include "Coord.h"
 
 class TextView {
 public:

@@ -4,6 +4,7 @@ set(bridge_SRCS
     PMWindowImp.cpp
     View.cpp
     Window.cpp
+    WindowSystemFactory.cpp
     XWindowImp.cpp)
 
 add_library(bridge SHARED ${bridge_SRCS})

@@ -1,5 +1,6 @@
 #include "Window.h"
 #include "WindowImp.h"
+#include "WindowSystemFactory.h"
 
 void Window::DrawRect (const Point& p1, const Point& p2) {
     WindowImp* imp = GetWindowImp();
