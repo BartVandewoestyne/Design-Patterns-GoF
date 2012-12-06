@@ -2,6 +2,7 @@ set(creational_patterns_SRCS
     Door.cpp
     Maze.cpp
     Room.cpp
+    RoomWithABomb.cpp
     Wall.cpp)
 
 add_library(creational_patterns SHARED ${creational_patterns_SRCS})

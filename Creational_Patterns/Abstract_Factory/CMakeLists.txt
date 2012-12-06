@@ -4,8 +4,7 @@ set(abstract_factory_SRCS
     EnchantedMazeFactory.cpp
     EnchantedRoom.cpp
     MazeFactory.cpp
-    MazeGame.cpp
-    RoomWithABomb.cpp)
+    MazeGame.cpp)
 
 include_directories(..)
 

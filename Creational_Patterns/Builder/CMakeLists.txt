@@ -4,7 +4,6 @@ set(builder_SRCS
     CountingMazeBuilder.cpp
     MazeBuilder.cpp
     MazeGame.cpp
-    RoomWithABomb.cpp
     StandardMazeBuilder.cpp)
 
 add_library(builder SHARED ${builder_SRCS})
