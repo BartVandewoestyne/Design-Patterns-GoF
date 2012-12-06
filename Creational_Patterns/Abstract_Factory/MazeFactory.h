@@ -1,5 +1,5 @@
-#ifndef MAZEFACTORY_H
-#define MAZEFACTORY_H
+#ifndef MAZE_FACTORY_H
+#define MAZE_FACTORY_H
 
 #include "Maze.h"
 #include "Wall.h"
@@ -20,4 +20,4 @@ public:
         { return new Door(r1, r2); }
 };
 
-#endif /* MAZEFACTORY_H */
+#endif /* MAZE_FACTORY_H */

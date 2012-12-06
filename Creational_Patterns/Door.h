@@ -7,6 +7,7 @@
 class Door : public MapSite {
 public:
     Door();
+    Door(Room* r1, Room* r2);
     Door(const Door&);
 
     virtual void Initialize(Room*, Room*);
@@ -14,6 +15,7 @@ public:
 
     virtual void Enter();
     Room* OtherSideFrom(Room*);
+
 private:
     Room* _room1;
     Room* _room2;

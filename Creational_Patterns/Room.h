@@ -1,16 +1,23 @@
 #ifndef ROOM_H
 #define ROOM_H
 
-class Door;
-class Wall;
+#include "MapSite.h"
+#include "MazeParts.h"
 
-enum Orientation {North, South, East, West};
-
-class Room {
+class Room : MapSite {
 public:
-    Room(int n);
-    void SetSide(Orientation orientation, Wall* wall);
-    void SetSide(Orientation orientation, Door* door);
+    Room(int n = 0);
+
+    virtual Room* Clone() const;
+
+    void SetSide(Direction direction, MapSite* ms);
+    int GetRoomNumber();
+
+    virtual void Enter();
+
+private:
+    MapSite* _sides[4];
+    int _roomNumber;
 };
 
 #endif /* ROOM_H */

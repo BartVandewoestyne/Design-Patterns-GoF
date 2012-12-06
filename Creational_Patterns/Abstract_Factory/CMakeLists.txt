@@ -1,15 +1,13 @@
 set(abstract_factory_SRCS
     BombedMazeFactory.cpp
-    Door.cpp
     DoorNeedingSpell.cpp
     EnchantedMazeFactory.cpp
     EnchantedRoom.cpp
-    Maze.cpp
     MazeFactory.cpp
     MazeGame.cpp
     RoomWithABomb.cpp)
 
-include_directories(../)
+include_directories(..)
 
 add_library(abstract_factory SHARED ${abstract_factory_SRCS})
 

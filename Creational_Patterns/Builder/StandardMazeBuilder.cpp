@@ -1,7 +1,9 @@
+#include "Door.h"
 #include "Maze.h"
+#include "MazeParts.h"
 #include "StandardMazeBuilder.h"
+#include "Wall.h"
 
-class Door;
 class Room;
 
 StandardMazeBuilder::StandardMazeBuilder () {
@@ -37,6 +39,18 @@ void StandardMazeBuilder::BuildDoor (int n1, int n2) {
     r2->SetSide(CommonWall(r2,r1), d);
 }
 
+/**
+ * Utility operation that determines the direction of the common wall
+ * between two rooms.
+ */
 Direction StandardMazeBuilder::CommonWall(Room* r1, Room* r2) {
-    return North;
+
+    // Solution based on https://code.google.com/p/basic-algorithm-operations/source/browse/trunk/DP/Builder.cpp
+    // TODO: check if this is a correct implementation.
+    if ( r1->GetRoomNumber() < r2->GetRoomNumber() ) {
+        return East;
+    } else {
+        return West;
+    }
+
 }

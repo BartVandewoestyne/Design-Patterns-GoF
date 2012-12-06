@@ -2,7 +2,7 @@
 #define COUNTING_MAZE_BUILDER_H
 
 #include "MazeBuilder.h"
-#include "Room.h"
+#include "MazeParts.h"
 
 class CountingMazeBuilder : public MazeBuilder {
 public:

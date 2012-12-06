@@ -1,4 +1,5 @@
 #include "CountingMazeBuilder.h"
+#include "MazeParts.h"
 
 CountingMazeBuilder::CountingMazeBuilder () {
     _rooms = _doors = 0;

@@ -6,7 +6,7 @@
 
 class MazeGame {
 public:
-  Maze* CreateMaze(MazeFactory simpleMazeFactory);
+  Maze* CreateMaze(MazeFactory& mazeFactory);
 };
 
 #endif /* MAZE_GAME_H */

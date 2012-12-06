@@ -1,3 +1,4 @@
+#include <iostream>
 #include "BombedWall.h"
 #include "Door.h"
 #include "Maze.h"
@@ -14,6 +15,7 @@ int main()
         new Maze, new Wall, new Room, new Door
     );
     Maze* maze = game.CreateMaze(simpleMazeFactory);
+    std::cout << maze << std::endl;
 
     MazePrototypeFactory bombedMazeFactory(
         new Maze, new BombedWall,

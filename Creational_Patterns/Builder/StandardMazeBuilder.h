@@ -3,6 +3,7 @@
 
 #include "MazeBuilder.h"
 #include "Room.h"
+#include "MazeParts.h"
 
 class Maze;
 

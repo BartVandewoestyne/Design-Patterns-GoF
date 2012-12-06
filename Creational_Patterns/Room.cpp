@@ -5,16 +5,22 @@ class Wall;
 class Door;
 
 Room::Room(int n)
+  : _roomNumber(n)
+{}
+
+void Room::SetSide(Direction direction, MapSite* ms)
 {
-    std::cout << "Room(int n)" << std::endl;
+    _sides[direction] = ms;
 }
 
-void Room::SetSide(Orientation orientation, Wall* wall)
+int Room::GetRoomNumber()
 {
-    std::cout << "Room::SetSide(Orientation orientation, Wall* wall)" << std::endl;
+    return _roomNumber;
 }
 
-void Room::SetSide(Orientation orientation, Door* door)
-{
-    std::cout << "Room::SetSide(Orientation orientation, Door* door)" << std::endl;
+Room* Room::Clone() const {
+    return new Room(*this);
 }
+
+void Room::Enter()
+{}

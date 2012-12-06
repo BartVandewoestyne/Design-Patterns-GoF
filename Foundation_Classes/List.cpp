@@ -16,7 +16,7 @@ List<Item>::List(long size) : _size(size), _count(0) {
 
 template<class Item> 
 List<Item>::~List() {
-    delete _items;
+    delete[] _items;
 }
 
 // TODO: operator=
@@ -27,12 +27,16 @@ long List<Item>::Count() const {
     return _count;
 }
 
+// TODO:
+//   * solve warning 'control reaches end of non-void function'.
+//   * shouldn't the test be if (index < _count) ???
 template<class Item> 
 Item& List<Item>::Get(long index) const {
-    if (_count <= _size) 
+    if (_count <= _size) {
       return _items[index];
-    else
-      ; // throw RangeError exception
+    } else {
+      // throw RangeError exception
+    }
 }
 
 template<class Item> 
