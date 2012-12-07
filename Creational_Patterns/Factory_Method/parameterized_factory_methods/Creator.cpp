@@ -1,22 +1,12 @@
-class ProductId {
-public:
-  friend bool operator==(const ProductId &id1, const ProductId &id2);
-};
-
-bool operator==(const ProductId &id1, const ProductId &id2)
-{
-  return true;
-}
+typedef int ProductId;
+const ProductId MINE = 1;
+const ProductId YOURS = 2;
+const ProductId THEIRS = 2;
 
 class Product {};
-
 class MyProduct : public Product {};
 class YourProduct : public Product {};
 class TheirProduct : public Product {};
-
-const ProductId MINE;
-const ProductId YOURS;
-const ProductId THEIRS;
 
 class Creator {
 public:

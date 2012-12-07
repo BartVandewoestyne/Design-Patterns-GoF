@@ -3,6 +3,29 @@
 #include "MazeFactory.h"
 #include "MazeGame.h"
 
+Maze* MazeGame::CreateMaze() {
+    Maze* aMaze = MakeMaze();
+
+    Room* r1 = MakeRoom(1);
+    Room* r2 = MakeRoom(2);
+    Door* theDoor = MakeDoor(r1, r2);
+
+    aMaze->AddRoom(r1);
+    aMaze->AddRoom(r2);
+
+    r1->SetSide(North, MakeWall());
+    r1->SetSide(East, theDoor);
+    r1->SetSide(South, MakeWall());
+    r1->SetSide(West, MakeWall());
+
+    r2->SetSide(North, MakeWall());
+    r2->SetSide(East, MakeWall());
+    r2->SetSide(South, MakeWall());
+    r2->SetSide(West, theDoor);
+
+    return aMaze;
+}
+
 Maze* MazeGame::CreateMaze(MazeFactory& factory) {
     Maze* aMaze = factory.MakeMaze();
     Room* r1 = factory.MakeRoom(1);
@@ -25,7 +48,7 @@ Maze* MazeGame::CreateMaze(MazeFactory& factory) {
     return aMaze;
 }
 
-Maze* MazeGame::CreateMaze (MazeBuilder& builder) {
+Maze* MazeGame::CreateMaze(MazeBuilder& builder) {
     builder.BuildMaze();
 
     builder.BuildRoom(1);
@@ -36,7 +59,7 @@ Maze* MazeGame::CreateMaze (MazeBuilder& builder) {
 }
 
 
-Maze* MazeGame::CreateComplexMaze (MazeBuilder& builder) {
+Maze* MazeGame::CreateComplexMaze(MazeBuilder& builder) {
     builder.BuildRoom(1);
     // ...
     builder.BuildRoom(1001);

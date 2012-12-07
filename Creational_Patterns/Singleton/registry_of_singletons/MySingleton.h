@@ -1,11 +1,11 @@
-#ifndef MYSINGLETON_H
-#define MYSINGLETON_H
+#ifndef MY_SINGLETON_H
+#define MY_SINGLETON_H
 
 #include "Singleton.h"
 
 class MySingleton : public Singleton {
-protected: // TODO: should this be protected???
+public:
     MySingleton();
 };
 
-#endif /* MYSINGLETON_H */
+#endif /* MY_SINGLETON_H */

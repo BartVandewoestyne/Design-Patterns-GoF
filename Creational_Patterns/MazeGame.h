@@ -15,7 +15,7 @@ public:
 
     Maze* CreateMaze(MazeFactory& factory);
     Maze* CreateMaze(MazeBuilder& builder);
-    Maze* CreateComplexMaze (MazeBuilder& builder);
+    Maze* CreateComplexMaze(MazeBuilder& builder);
 
     // factory methods:
 

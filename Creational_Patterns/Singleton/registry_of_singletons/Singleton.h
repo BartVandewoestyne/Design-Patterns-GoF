@@ -1,6 +1,9 @@
 #ifndef SINGLETON_H
 #define SINGLETON_H
 
+#include "List.h"
+#include "NameSingletonPair.h"
+
 class Singleton {
 public:
     static void Register(const char* name, Singleton*);
