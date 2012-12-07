@@ -6,11 +6,18 @@
 #include "Wall.h"
 #include "Door.h"
 
+class MazeFactory;
+class MazeBuilder;
+
 class MazeGame {
 public:
     Maze* CreateMaze();
 
-// factory methods:
+    Maze* CreateMaze(MazeFactory& factory);
+    Maze* CreateMaze(MazeBuilder& builder);
+    Maze* CreateComplexMaze (MazeBuilder& builder);
+
+    // factory methods:
 
     virtual Maze* MakeMaze() const
         { return new Maze; }

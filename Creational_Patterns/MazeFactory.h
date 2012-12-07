@@ -1,21 +1,26 @@
 #ifndef MAZE_FACTORY_H
 #define MAZE_FACTORY_H
 
-class Maze;
-class Room;
-class Wall;
-class Door;
+#include "Maze.h"
+#include "Wall.h"
+#include "Room.h"
+#include "Door.h"
 
 class MazeFactory {
 public:
-    MazeFactory();
+
+    static MazeFactory* Instance();
 
     virtual Maze* MakeMaze() const;
     virtual Wall* MakeWall() const;
     virtual Room* MakeRoom(int n) const;
     virtual Door* MakeDoor(Room* r1, Room* r2) const;
 
-protected:
+//protected:
+public:
+    MazeFactory();  // constructor is public for Abstract Factory, protected for Singleton
+
+private:
     static MazeFactory* _instance;
 };
 

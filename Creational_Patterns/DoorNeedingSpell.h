@@ -2,7 +2,8 @@
 #define DOOR_NEEDING_SPELL_H 
 
 #include "Door.h"
-#include "Room.h"
+
+class Room;
 
 class DoorNeedingSpell : public Door {
 public:

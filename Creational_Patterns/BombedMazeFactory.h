@@ -2,8 +2,9 @@
 #define BOMBED_MAZEFACTORY_H
 
 #include "MazeFactory.h"
-#include "Wall.h"
-#include "Room.h"
+
+class Wall;
+class Room;
 
 class BombedMazeFactory : public MazeFactory {
 public:

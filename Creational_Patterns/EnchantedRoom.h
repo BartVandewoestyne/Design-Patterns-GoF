@@ -2,7 +2,7 @@
 #define ENCHANTED_ROOM_H
 
 #include "Room.h"
-#include "Spell.h"
+class Spell;
 
 class EnchantedRoom : public Room {
 public:

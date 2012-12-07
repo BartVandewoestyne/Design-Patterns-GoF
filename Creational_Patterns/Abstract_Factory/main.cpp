@@ -11,5 +11,4 @@ int main()
 
   game.CreateMaze(factoryBombed);
   game.CreateMaze(factoryEnchanted);
-
 }

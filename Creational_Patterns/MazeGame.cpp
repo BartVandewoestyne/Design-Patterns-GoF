@@ -1,4 +1,5 @@
 #include "Maze.h"
+#include "MazeBuilder.h"
 #include "MazeFactory.h"
 #include "MazeGame.h"
 
@@ -23,3 +24,23 @@ Maze* MazeGame::CreateMaze(MazeFactory& factory) {
 
     return aMaze;
 }
+
+Maze* MazeGame::CreateMaze (MazeBuilder& builder) {
+    builder.BuildMaze();
+
+    builder.BuildRoom(1);
+    builder.BuildRoom(2);
+    builder.BuildDoor(1, 2);
+
+    return builder.GetMaze();
+}
+
+
+Maze* MazeGame::CreateComplexMaze (MazeBuilder& builder) {
+    builder.BuildRoom(1);
+    // ...
+    builder.BuildRoom(1001);
+
+    return builder.GetMaze();
+}
+

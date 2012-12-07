@@ -1,12 +1,14 @@
 #ifndef ENCHANTED_MAZE_FACTORY_H
 #define ENCHANTED_MAZE_FACTORY_H
 
-#include "Door.h"
 #include "DoorNeedingSpell.h"
 #include "EnchantedRoom.h"
 #include "MazeFactory.h"
-#include "Room.h"
 #include "Spell.h"
+
+class Door;
+class Room;
+class MazeFactory;
 
 class EnchantedMazeFactory : public MazeFactory {
 public:
