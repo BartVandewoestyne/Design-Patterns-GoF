@@ -1,16 +1,16 @@
-#include "Currency.h"
 #include "Card.h"
 #include "Equipment.h"
-#include "Watt.h"
 
 Card::Card(const char* name)
   : Equipment(name)
-{
-}
+{}
+
+Card::~Card()
+{}
 
 Watt Card::Power()
 {
-  Watt w;
+  Watt w(3);
   return w;
 }
 

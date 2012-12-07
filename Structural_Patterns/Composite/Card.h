@@ -1,9 +1,7 @@
 #ifndef CARD_H
 #define CARD_H
 
-#include "Currency.h"
 #include "Equipment.h"
-#include "Watt.h"
 
 class Card : public Equipment {
 public:

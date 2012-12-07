@@ -1,10 +1,8 @@
 #ifndef COMPOSITE_EQUIPMENT_H
 #define COMPOSITE_EQUIPMENT_H
 
-#include "Currency.h"
 #include "Equipment.h"
 #include "List.h"
-#include "Watt.h"
 
 class CompositeEquipment : public Equipment {
 public:
@@ -16,12 +14,12 @@ public:
 
     virtual void Add(Equipment*);
     virtual void Remove(Equipment*);
-    virtual Iterator* CreateIterator();
+    virtual Iterator<Equipment*>* CreateIterator(); // ERRATUM: book did not have template argument here.
 
 protected:
     CompositeEquipment(const char*);
 private:
-    List _equipment;
+    List<Equipment*> _equipment; // ERRATUM: book did not have template argument here.
 };
 
 #endif /* COMPOSITE_EQUIPMENT_H */

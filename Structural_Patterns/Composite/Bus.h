@@ -2,8 +2,6 @@
 #define BUS_H
 
 #include "CompositeEquipment.h"
-#include "Currency.h"
-#include "Watt.h"
 
 class Bus : public CompositeEquipment {
 public:

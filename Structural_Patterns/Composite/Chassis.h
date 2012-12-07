@@ -2,8 +2,6 @@
 #define CHASSIS_H
 
 #include "CompositeEquipment.h"
-#include "Currency.h"
-#include "Watt.h"
 
 class Chassis : public CompositeEquipment {
 public:

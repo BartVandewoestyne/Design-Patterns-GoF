@@ -1,10 +1,10 @@
 #ifndef EQUIPMENT_H
 #define EQUIPMENT_H
 
-#include "Currency.h"
-#include "Watt.h"
+#include "Iterator.h"
 
-class Iterator;
+typedef int Currency;
+typedef int Watt;
 
 class Equipment {
 public:
@@ -18,9 +18,9 @@ public:
 
     virtual void Add(Equipment*);
     virtual void Remove(Equipment*);
-    virtual Iterator* CreateIterator();
+    virtual Iterator<Equipment*>* CreateIterator(); // ERRATUM: book had different iterator here.
 protected:
-    Equipment(const char*);
+    Equipment(const char* name);
 private:
     const char* _name;
 };

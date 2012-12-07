@@ -1,15 +1,15 @@
-#include "Currency.h"
 #include "FloppyDisk.h"
-#include "Watt.h"
 
 FloppyDisk::FloppyDisk(const char* name)
   : Equipment(name)
-{
-}
+{}
+
+FloppyDisk::~FloppyDisk()
+{}
 
 Watt FloppyDisk::Power()
 {
-  Watt w;
+  Watt w(10);
   return w;
 }
 

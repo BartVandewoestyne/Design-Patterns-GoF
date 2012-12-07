@@ -1,15 +1,15 @@
-#include "Currency.h"
 #include "Bus.h"
-#include "Watt.h"
 
 Bus::Bus(const char* name)
   : CompositeEquipment(name)
-{
-}
+{}
+
+Bus::~Bus()
+{}
 
 Watt Bus::Power()
 {
-  Watt w;
+  Watt w(1);
   return w;
 }
 

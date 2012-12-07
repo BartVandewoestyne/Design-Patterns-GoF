@@ -1,15 +1,15 @@
-#include "Currency.h"
 #include "Cabinet.h"
-#include "Watt.h"
 
 Cabinet::Cabinet(const char* name)
   : CompositeEquipment(name)
-{
-}
+{}
+
+Cabinet::~Cabinet()
+{}
 
 Watt Cabinet::Power()
 {
-  Watt w;
+  Watt w(2);
   return w;
 }
 

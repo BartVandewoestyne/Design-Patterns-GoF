@@ -2,8 +2,6 @@
 #define CABINET_H
 
 #include "CompositeEquipment.h"
-#include "Currency.h"
-#include "Watt.h"
 
 class Cabinet : public CompositeEquipment {
 public:

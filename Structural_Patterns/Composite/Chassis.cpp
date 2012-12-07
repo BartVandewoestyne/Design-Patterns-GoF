@@ -1,15 +1,15 @@
-#include "Currency.h"
 #include "Chassis.h"
-#include "Watt.h"
 
 Chassis::Chassis(const char* name)
   : CompositeEquipment(name)
-{
-}
+{}
+
+Chassis::~Chassis()
+{}
 
 Watt Chassis::Power()
 {
-  Watt w;
+  Watt w(4);
   return w;
 }
 

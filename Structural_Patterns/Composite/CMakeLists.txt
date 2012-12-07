@@ -1,4 +1,5 @@
-#include_directories(../../Foundation_Classes)
+include_directories(../../Foundation_Classes)
+include_directories(../../Behavioral_Patterns/Iterator)
 
 set(composite_SRCS
     Bus.cpp
@@ -6,7 +7,6 @@ set(composite_SRCS
     Card.cpp
     Chassis.cpp
     CompositeEquipment.cpp
-    Currency.cpp
     Equipment.cpp
     FloppyDisk.cpp)
 

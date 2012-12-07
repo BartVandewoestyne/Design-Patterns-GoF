@@ -1,9 +1,7 @@
 #ifndef FLOPPY_DISK_H
 #define FLOPPY_DISK_H
 
-#include "Currency.h"
 #include "Equipment.h"
-#include "Watt.h"
 
 class FloppyDisk : public Equipment {
 public:
