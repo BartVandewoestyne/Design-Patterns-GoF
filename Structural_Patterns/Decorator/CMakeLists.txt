@@ -1,5 +1,3 @@
-#include_directories(../../Foundation_Classes)
-
 set(decorator_SRCS
     BorderDecorator.cpp
     Decorator.cpp
