@@ -2,17 +2,23 @@ This is my implementation of the Design Patterns from the book
 
   'Design Patterns: Elements of Reusable Object-Oriented Software'
   Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+  ISBN 0-201-63361-2
+  Copyright 1995
+  21th Printing, November 2000
 
-The webpage and official 'code' for this book are available from:
+The webpage and official 'code' for this book were previously available from
 
   [1] http://st-www.cs.illinois.edu/users/patterns/DPBook/DPBook.html
   [2] http://st-www.cs.illinois.edu/patterns/dpbook/Source.html
 
-The nice thing about the book is that it is... well... not complete :-)
-To obtain a complete working implementation of all the Design Patterns
-presented requires some extra coding.  The goal of this project is to actually
-provide the missing pieces and come to something that will compile and run
-cleanly.
+(TODO: link [1] and [2] no longer work.  Does anybody know the new location of
+ the 'official' source code for the book?)
+
+The nice thing about the book is that it is... well... not complete :-) To come
+to a complete working implementation of all the Design Patterns presented in the
+book, and be able to play with them, requires some extra coding.  The goal of
+this project is to actually provide the missing pieces and come to something
+that will compile and run cleanly.
 
 On the following websites, I have found some more C++ code that helped me
 complete everything:
