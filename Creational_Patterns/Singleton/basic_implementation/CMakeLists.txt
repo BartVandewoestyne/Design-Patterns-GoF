@@ -1,1 +1,1 @@
-add_library(singleton1 Singleton.cpp)
+add_library(singleton_basic Singleton.cpp)

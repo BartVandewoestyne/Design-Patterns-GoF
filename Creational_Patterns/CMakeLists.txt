@@ -1,4 +1,5 @@
 include_directories(Builder Abstract_Factory)
+
 set(creational_patterns_SRCS
     BombedMazeFactory.cpp
     BombedMazeGame.cpp

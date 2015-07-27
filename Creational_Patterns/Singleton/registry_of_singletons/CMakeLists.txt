@@ -6,4 +6,4 @@ set(singleton_SRCS
     NameSingletonPair.cpp
     Singleton.cpp)
 
-add_library(singleton2 ${singleton_SRCS})
+add_library(registry_of_singletons ${singleton_SRCS})
