@@ -28,10 +28,11 @@ complete everything:
   [5] https://code.google.com/p/basic-algorithm-operations/source/browse/trunk/DP
   [6] http://dislab.hufs.ac.kr/wiki/Lecture/Design_Pattern
   [7] http://blog.csdn.net/joey_zoy/article/details/5610810
+  [8] https://github.com/wangqiang8511/C---Design-Patterns-Examples/
 
 And here are some interesting slides that give some more explanation:
 
-  [6] http://www.cs.toronto.edu/~penny/teaching/csc407/
+  [9] http://www.cs.toronto.edu/~penny/teaching/csc407/
 
 Feel free to send me your comments, suggestions and improvements in the form
 of a git pull request!
