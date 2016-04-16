@@ -39,5 +39,9 @@ by Tobias Darm given here:
 
   http://www.infoq.com/presentations/gof-patterns-c-plus-plus-boost
 
+An interview from 2009 with the GoF authors is given here:
+
+  http://www.informit.com/articles/article.aspx?p=1404056
+
 Feel free to send me your comments, suggestions and improvements in the form
 of a git pull request!
