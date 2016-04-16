@@ -34,5 +34,10 @@ And here are some interesting slides that give some more explanation:
 
   [9] http://www.cs.toronto.edu/~penny/teaching/csc407/
 
+A more modern C++11 approach using Boost libraries was given in a talk
+by Tobias Darm given here:
+
+  http://www.infoq.com/presentations/gof-patterns-c-plus-plus-boost
+
 Feel free to send me your comments, suggestions and improvements in the form
 of a git pull request!
