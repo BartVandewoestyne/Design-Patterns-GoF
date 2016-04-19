@@ -4,6 +4,7 @@ include_directories(../../../Foundation_Classes
 set(singleton_SRCS
     MySingleton.cpp
     NameSingletonPair.cpp
-    Singleton.cpp)
+    Singleton.cpp
+    main.cpp)
 
-add_library(registry_of_singletons ${singleton_SRCS})
+add_executable(registry_of_singletons ${singleton_SRCS})
