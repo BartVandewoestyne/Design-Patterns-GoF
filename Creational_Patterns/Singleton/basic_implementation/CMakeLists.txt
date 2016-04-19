@@ -1,1 +1,1 @@
-add_library(singleton_basic Singleton.cpp)
+add_executable(singleton_basic Singleton.cpp main.cpp)
