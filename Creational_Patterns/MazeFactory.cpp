@@ -1,13 +1,15 @@
-#include <iostream>
-#include <cstdlib>
-#include <cstring>
 #include "MazeFactory.h"
+
 #include "BombedMazeFactory.h"
 #include "EnchantedMazeFactory.h"
 #include "Maze.h"
 #include "Wall.h"
 #include "Room.h"
 #include "Door.h"
+
+#include <iostream>
+#include <cstdlib>
+#include <cstring>
 
 MazeFactory* MazeFactory::_instance = 0;
 

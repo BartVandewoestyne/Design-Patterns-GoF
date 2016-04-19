@@ -3,7 +3,12 @@
 #include "MazeFactory.h"
 #include "MazeGame.h"
 
+#include <iostream>
+
 Maze* MazeGame::CreateMaze() {
+
+    std::cout << "MazeGame::CreateMaze()" << std::endl;
+
     Maze* aMaze = MakeMaze();
 
     Room* r1 = MakeRoom(1);
@@ -27,6 +32,9 @@ Maze* MazeGame::CreateMaze() {
 }
 
 Maze* MazeGame::CreateMaze(MazeFactory& factory) {
+
+    std::cout << "MazeGame::CreateMaze(MazeFactory&)" << std::endl;
+
     Maze* aMaze = factory.MakeMaze();
     Room* r1 = factory.MakeRoom(1);
     Room* r2 = factory.MakeRoom(2);
@@ -49,6 +57,9 @@ Maze* MazeGame::CreateMaze(MazeFactory& factory) {
 }
 
 Maze* MazeGame::CreateMaze(MazeBuilder& builder) {
+
+    std::cout << "MazeGame::CreateMaze(MazeBuilder&)" << std::endl;
+
     builder.BuildMaze();
 
     builder.BuildRoom(1);
@@ -60,10 +71,12 @@ Maze* MazeGame::CreateMaze(MazeBuilder& builder) {
 
 
 Maze* MazeGame::CreateComplexMaze(MazeBuilder& builder) {
+
+    std::cout << "MazeGame::CreateComplexMaze(MazeBuilder&)" << std::endl;
+
     builder.BuildRoom(1);
     // ...
     builder.BuildRoom(1001);
 
     return builder.GetMaze();
 }
-
