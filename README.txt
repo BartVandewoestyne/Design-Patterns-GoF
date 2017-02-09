@@ -43,5 +43,10 @@ An interview from 2009 with the GoF authors is given here:
 
   http://www.informit.com/articles/article.aspx?p=1404056
 
+A dependency analysis and refactoring of the Gang of Four examples can
+be found at
+
+  https://github.com/zebmason/GoFRefactored/blob/master/README.md
+
 Feel free to send me your comments, suggestions and improvements in the form
 of a git pull request!
