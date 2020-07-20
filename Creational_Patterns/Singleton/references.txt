@@ -1,0 +1,1 @@
+http://www.vishalchovatiya.com/singleton-design-pattern-in-modern-cpp/
