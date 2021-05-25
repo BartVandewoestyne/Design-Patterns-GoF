@@ -6,7 +6,7 @@
 #include <cstdlib>
 
 Singleton* Singleton::_instance = 0;
-List<NameSingletonPair>* Singleton::_registry = 0;
+List<NameSingletonPair>* Singleton::_registry = 0;  // TODO: initialize _registry so we don't get a crash when running this example.
 
 Singleton* Singleton::Instance() {
 
