@@ -4,7 +4,7 @@
 
 Document::Document(const char* name)
 {
-    std::cout << "Document::Document(const char*)" << std::endl;
+    std::cout << "Constructing document '" << name << "'." << std::endl;
 }
 
 void Document::Open()
