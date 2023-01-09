@@ -48,3 +48,22 @@ be found at
 
 Feel free to send me your comments, suggestions and improvements in the form
 of a git pull request!
+
+## Building
+
+Checkout the code into a `Design-Patterns-GoF` directory:
+
+```
+$ git checkout git@github.com:BartVandewoestyne/Design-Patterns-GoF.git
+```
+Then, at the same directory level of the `Design-Patterns-GoF` directory, create a build directory and change into it:
+
+```
+~$ mkdir build
+~$ cd build
+```
+Now do an out-of-source build using CMake:
+```
+~/build$ cmake ../Design-Patterns-GoF/
+~/build$ make
+``` 
