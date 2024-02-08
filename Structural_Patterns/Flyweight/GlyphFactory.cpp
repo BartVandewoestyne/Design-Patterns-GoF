@@ -12,7 +12,10 @@ GlyphFactory::GlyphFactory()
 
 GlyphFactory:: ~GlyphFactory()
 {
-    delete[] _character;
+    for (int i = 0; i < NCHARCODES; ++i) {
+        delete _character[i];
+        _character[i] = 0;
+    }
 }
 
 Character* GlyphFactory::CreateCharacter(char c)
