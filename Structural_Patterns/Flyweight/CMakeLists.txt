@@ -1,6 +1,3 @@
-#include_directories(../../Foundation_Classes)
-#include_directories(../../Behavioral_Patterns/Iterator)
-
 set(flyweight_SRCS
     Character.cpp
     Font.cpp

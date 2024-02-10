@@ -1,5 +1,3 @@
-#include_directories(./ ../../Foundation_Classes)
-
 set(chain_of_responsibility_SRCS
     Handler.cpp
     HelpHandler.cpp
