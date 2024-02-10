@@ -53,6 +53,10 @@ of a git pull request!
 
 ## Building
 
+To build everything, you need at least the following:
+
+* CMake 3.14 or higher
+
 Checkout the code into a `Design-Patterns-GoF` directory:
 
 ```text
@@ -65,4 +69,10 @@ Then, switch to the `Design-Patterns-GoF` directory and do the build:
 ~$ cd Design-Patterns-GoF
 ~/Design-Patterns-GoF$ cmake -S . -B build
 ~/Design-Patterns-GoF$ cmake --build build
+```
+
+You can also use CMake's `-j N` option for parallel builds on `N` cores and `-v` for verbose builds:
+
+```text
+~/Design-Patterns-GoF$ cmake --build build -j 4 -v
 ```
