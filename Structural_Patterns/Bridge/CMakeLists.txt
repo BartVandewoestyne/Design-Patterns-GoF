@@ -9,4 +9,4 @@ set(bridge_SRCS
 
 add_library(bridge SHARED ${bridge_SRCS})
 
-include_directories(../../Foundation_Classes)
+target_include_directories(bridge PRIVATE ../../Foundation_Classes)

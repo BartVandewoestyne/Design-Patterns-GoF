@@ -1,11 +1,10 @@
-include_directories(../)
-
 set(builder_SRCS
     CountingMazeBuilder.cpp
     MazeBuilder.cpp
     StandardMazeBuilder.cpp)
 
 add_library(builder SHARED ${builder_SRCS})
+target_include_directories(builder PUBLIC ../)
 
 add_executable(builder1 builder1.cpp)
 add_executable(builder2 builder2.cpp)

@@ -1,3 +1,3 @@
 add_library(object_adapter SHARED TextShape.cpp)
 
-include_directories(.. ../../Foundation_Classes)
+target_include_directories(object_adapter PRIVATE .. ../../../Foundation_Classes)

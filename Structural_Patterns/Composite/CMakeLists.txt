@@ -1,6 +1,3 @@
-include_directories(../../Foundation_Classes)
-include_directories(../../Behavioral_Patterns/Iterator)
-
 set(composite_SRCS
     Bus.cpp
     Cabinet.cpp
@@ -11,6 +8,7 @@ set(composite_SRCS
     FloppyDisk.cpp)
 
 add_library(composite SHARED ${composite_SRCS})
+target_include_directories(composite PUBLIC ../../Foundation_Classes ../../Behavioral_Patterns/Iterator)
 
 add_executable(composite1 main.cpp)
 

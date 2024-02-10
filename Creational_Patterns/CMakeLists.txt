@@ -1,5 +1,3 @@
-include_directories(Builder Abstract_Factory)
-
 set(creational_patterns_SRCS
     BombedMazeFactory.cpp
     BombedMazeGame.cpp
@@ -16,6 +14,7 @@ set(creational_patterns_SRCS
     Wall.cpp)
 
 add_library(creational_patterns SHARED ${creational_patterns_SRCS})
+target_include_directories(creational_patterns PRIVATE Builder Abstract_Factory)
 
 add_subdirectory(Abstract_Factory)
 add_subdirectory(Builder)
