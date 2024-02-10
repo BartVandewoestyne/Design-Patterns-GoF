@@ -55,17 +55,14 @@ of a git pull request!
 
 Checkout the code into a `Design-Patterns-GoF` directory:
 
+```text
+~$ git checkout git@github.com:BartVandewoestyne/Design-Patterns-GoF.git
 ```
-$ git checkout git@github.com:BartVandewoestyne/Design-Patterns-GoF.git
-```
-Then, at the same directory level of the `Design-Patterns-GoF` directory, create a build directory and change into it:
 
+Then, switch to the `Design-Patterns-GoF` directory and do the build:
+
+```text
+~$ cd Design-Patterns-GoF
+~/Design-Patterns-GoF$ cmake -S . -B build
+~/Design-Patterns-GoF$ cmake --build build
 ```
-~$ mkdir build
-~$ cd build
-```
-Now do an out-of-source build using CMake:
-```
-~/build$ cmake ../Design-Patterns-GoF/
-~/build$ make
-``` 
