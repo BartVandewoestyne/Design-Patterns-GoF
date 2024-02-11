@@ -2,7 +2,11 @@ cmake_minimum_required(VERSION 3.14...3.22.1)
 
 project(design_patterns CXX)
 
-set(CMAKE_CXX_FLAGS "-g -Wall -Wextra -std=c++98")
+set(CMAKE_CXX_STANDARD 98)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+set(CMAKE_CXX_FLAGS "-g -Wall -Wextra")
 #set(CMAKE_CXX_FLAGS "-g")
 
 add_subdirectory(Foundation_Classes)
