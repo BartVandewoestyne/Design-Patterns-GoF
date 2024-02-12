@@ -1,6 +1,7 @@
 set(observer_SRCS
     ClockTimer.cpp
     DigitalClock.cpp
+    Observer.cpp
     Subject.cpp)
 
 add_library(observer SHARED ${observer_SRCS})
