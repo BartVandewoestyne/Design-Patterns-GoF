@@ -2,3 +2,6 @@
 
 Observer::Observer()
 {}
+
+Observer::~Observer()
+{}
