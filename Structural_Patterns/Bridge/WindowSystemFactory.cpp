@@ -8,3 +8,9 @@ WindowSystemFactory* WindowSystemFactory::Instance () {
     }
     return _instance;
 }
+
+WindowImp* WindowSystemFactory::MakeWindowImp()
+{
+    // TODO
+    return 0;
+}
