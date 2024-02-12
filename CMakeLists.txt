@@ -6,8 +6,11 @@ set(CMAKE_CXX_STANDARD 98)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-set(CMAKE_CXX_FLAGS "-g -Wall -Wextra")
-#set(CMAKE_CXX_FLAGS "-g")
+if (MSVC)
+    add_compile_options(/W4)
+else()
+    add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
 add_subdirectory(Foundation_Classes)
 add_subdirectory(Behavioral_Patterns)
