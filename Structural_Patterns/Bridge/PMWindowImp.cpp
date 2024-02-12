@@ -27,3 +27,8 @@ void PMWindowImp::DeviceRect (
         GpiStrokePath(_hps, 1L, 0L);
     }
 }
+
+void PMWindowImp::GpiStrokePath(HPS hps, long, long)
+{
+    // TODO
+}
