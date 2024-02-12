@@ -1,5 +1,6 @@
 #include "XWindowImp.h"
 #include "Coord.h"
+#include <cmath>
 
 void XWindowImp::DeviceRect (
     Coord x0, Coord y0, Coord x1, Coord y1
