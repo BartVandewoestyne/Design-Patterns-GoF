@@ -34,7 +34,7 @@ void Window::Lower() {
     // TODO
  }
 
-void DrawLine(const Point&, const Point&) {
+void Window::DrawLine(const Point&, const Point&) {
     // TODO
 }
 
@@ -47,7 +47,7 @@ void Window::DrawPolygon(const Point[], int n) {
     // TODO
 }
 
-void DrawText(const char*, const Point&) {
+void Window::DrawText(const char*, const Point&) {
     // TODO
 }
 
