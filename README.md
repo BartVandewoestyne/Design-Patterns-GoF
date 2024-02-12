@@ -17,7 +17,7 @@ The webpage and official 'code' for this book were previously available from
 1. <http://st-www.cs.illinois.edu/users/patterns/DPBook/DPBook.html>
 2. <http://st-www.cs.illinois.edu/patterns/dpbook/Source.html>
 
-Unfortunately, these links no longer work.  If anybody knows the new location of the 'official' source code for the book, please let me know!
+Unfortunately, these links no longer work.  Someone pointed me to <https://github.com/willis7/DPCPP> as an alternative, but I don't know if the code in this repository is an exact copy of the original code.  In any case, if anybody knows the new location of the 'official' source code for the book, please let me know!
 
 The nice thing about the Design Patterns book is that it is... well... not complete :-) To come to a complete working implementation of all the Design Patterns presented in the book and be able to play with them, requires some extra coding.  The goal of this project is to actually provide the missing pieces and come to something that will compile and run cleanly.
 
