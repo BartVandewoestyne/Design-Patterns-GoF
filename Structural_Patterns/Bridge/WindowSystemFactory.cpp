@@ -14,3 +14,6 @@ WindowImp* WindowSystemFactory::MakeWindowImp()
     // TODO
     return 0;
 }
+
+WindowSystemFactory::WindowSystemFactory()
+{}
