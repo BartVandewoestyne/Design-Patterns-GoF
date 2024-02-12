@@ -18,19 +18,19 @@
     // TODO
  }
 
-void SetOrigin(const Point& at) {
+void Window::SetOrigin(const Point& at) {
     // TODO
  }
 
-void SetExtent(const Point& extent) {
+void Window::SetExtent(const Point& extent) {
     // TODO
  }
 
-void Raise() {
+void Window::Raise() {
     // TODO
  }
 
-void Lower() {
+void Window::Lower() {
     // TODO
  }
 
