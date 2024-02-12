@@ -34,13 +34,20 @@ void Window::Lower() {
     // TODO
  }
 
+void DrawLine(const Point&, const Point&) {
+    // TODO
+}
+
 void Window::DrawRect (const Point& p1, const Point& p2) {
     WindowImp* imp = GetWindowImp();
     imp->DeviceRect(p1.X(), p1.Y(), p2.X(), p2.Y());
 }
 
-void Window::DrawPolygon(const Point[], int n)
-{
+void Window::DrawPolygon(const Point[], int n) {
+    // TODO
+}
+
+void DrawText(const char*, const Point&) {
     // TODO
 }
 
@@ -49,4 +56,9 @@ WindowImp* Window::GetWindowImp () {
         _imp = WindowSystemFactory::Instance()->MakeWindowImp();
     }
     return _imp;
+}
+
+View* Window::GetView() {
+    // TODO
+    return 0;
 }
