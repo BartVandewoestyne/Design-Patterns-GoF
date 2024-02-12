@@ -1,4 +1,5 @@
 set(adapter_SRCS
+    Shape.cpp
     TextManipulator.cpp
     TextView.cpp)
 
