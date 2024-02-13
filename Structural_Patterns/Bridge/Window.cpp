@@ -12,37 +12,37 @@ void Window::DrawContents()
     // TODO
 }
 
- void Window::Open() {
+void Window::Open() {
     // TODO
- }
+}
  
- void Window::Close() {
+void Window::Close() {
     // TODO
- }
+}
  
- void Window::Iconify() {
+void Window::Iconify() {
     // TODO
- }
+}
  
- void Window::Deiconify() {
+void Window::Deiconify() {
     // TODO
- }
+}
 
 void Window::SetOrigin(const Point& at) {
     // TODO
- }
+}
 
 void Window::SetExtent(const Point& extent) {
     // TODO
- }
+}
 
 void Window::Raise() {
     // TODO
- }
+}
 
 void Window::Lower() {
     // TODO
- }
+}
 
 void Window::DrawLine(const Point&, const Point&) {
     // TODO
