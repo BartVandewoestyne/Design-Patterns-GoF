@@ -2,6 +2,7 @@ set(facade_SRCS
     CodeGenerator.cpp
     Compiler.cpp
     ExpressionNode.cpp
+    Parser.cpp
     ProgramNode.cpp
     ProgramNodeBuilder.cpp
     RISCCodeGenerator.cpp)
