@@ -3,6 +3,7 @@ set(facade_SRCS
     Compiler.cpp
     ExpressionNode.cpp
     ProgramNode.cpp
+    ProgramNodeBuilder.cpp
     RISCCodeGenerator.cpp)
 
 add_library(facade SHARED ${facade_SRCS})
