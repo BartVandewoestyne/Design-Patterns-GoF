@@ -28,6 +28,30 @@ void PMWindowImp::DeviceRect (
     }
 }
 
+bool PMWindowImp::GpiBeginPath(HPS hps, long i) const
+{
+    // TODO
+    return true;
+}
+
+bool PMWindowImp::GpiSetCurrentPosition(HPS hps, PPOINTL* p) const
+{
+    // TODO
+    return true;
+}
+
+int PMWindowImp::GpiPolyLine(HPS hps, long i, PPOINTL* p) const
+{
+    // TODO
+    return 1;
+}
+
+bool PMWindowImp::GpiEndPath(HPS hps) const
+{
+    // TODO
+    return true;
+}
+
 void PMWindowImp::GpiStrokePath(HPS hps, long, long)
 {
     // TODO
