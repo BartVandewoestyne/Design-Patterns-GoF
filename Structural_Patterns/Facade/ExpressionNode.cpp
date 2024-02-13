@@ -12,3 +12,11 @@ void ExpressionNode::Traverse (CodeGenerator& cg) {
         i.CurrentItem()->Traverse(cg);
     }
 }
+
+void ExpressionNode::Add(ProgramNode*) {
+    // TODO
+}
+
+void ExpressionNode::Remove(ProgramNode*) {
+    // TODO
+}
