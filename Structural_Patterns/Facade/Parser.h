@@ -1,6 +1,7 @@
 #ifndef PARSER_H
 #define PARSER_H
 
+class Scanner;
 class ProgramNodeBuilder;
 
 class Parser {
