@@ -7,6 +7,11 @@ Window::Window(View* contents)
     _contents = contents;
 }
 
+void Window::DrawContents()
+{
+    // TODO
+}
+
  void Window::Open() {
     // TODO
  }
