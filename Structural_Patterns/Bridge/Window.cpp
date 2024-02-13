@@ -2,6 +2,11 @@
 #include "WindowImp.h"
 #include "WindowSystemFactory.h"
 
+Window::Window(View* contents)
+{
+    _contents = contents;
+}
+
  void Window::Open() {
     // TODO
  }
