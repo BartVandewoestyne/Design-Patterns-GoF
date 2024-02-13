@@ -1,6 +1,9 @@
 #ifndef SCANNER_H
 #define SCANNER_H
 
+#include <istream>
+using std::istream;
+
 class Token;
 
 class Scanner {
