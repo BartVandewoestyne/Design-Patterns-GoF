@@ -11,3 +11,4 @@ add_library(bridge SHARED ${bridge_SRCS})
 
 target_include_directories(bridge PRIVATE ../../Foundation_Classes)
 target_link_libraries(bridge PRIVATE foundation_classes)
+target_link_options(bridge PRIVATE "LINKER:-v")
