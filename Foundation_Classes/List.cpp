@@ -30,8 +30,25 @@ List<Item>::~List() {
     delete[] _items;
 }
 
-// TODO: operator=
-  
+// Implements the assignment operation to assign member data properly.
+template<class Item>
+List<Item>& List<Item>::operator=(const List<Item>& other) {
+    if (this != &other) {  // Check for self-assignment
+        // Clear the current list
+        RemoveAll();
+
+        // Allocate memory for the new list
+        _size = other._size;
+        _count = other._count;
+        _items = new Item[_size];
+
+        // Copy elements from the other list to this list
+        for (long i = 0; i < _count; ++i) {
+            _items[i] = other._items[i];
+        }
+    }
+    return *this;
+}
 
 template<class Item> 
 long List<Item>::Count() const {
