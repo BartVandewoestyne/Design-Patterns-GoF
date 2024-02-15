@@ -22,7 +22,7 @@ void Image::Draw(const Point& at)
 
 void Image::HandleMouse(Event& event)
 {
-    //std::cout << "Handling mouse event " << event << std::endl;
+    std::cout << "Handling mouse event " << &event << std::endl;
 }
 
 const Point& Image::GetExtent()
