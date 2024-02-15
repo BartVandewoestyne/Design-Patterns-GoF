@@ -7,6 +7,8 @@
 #include <iostream>
 #include "ListIterator.h"
 
+// Initializes the list.
+// The size parameter is a hint for the initial number of elements.
 template<class Item> 
 List<Item>::List(long size) : _size(size), _count(0) {
     _items = new Item[size]; 
@@ -25,6 +27,8 @@ List<Item>::List(List& other) {
     }
 }
 
+// Frees the list's internal data structures but not the elements in the list. The class is
+// not designed for subclassing; therefore the destructor isn't virtual.
 template<class Item> 
 List<Item>::~List() {
     delete[] _items;
@@ -50,11 +54,13 @@ List<Item>& List<Item>::operator=(const List<Item>& other) {
     return *this;
 }
 
+// Returns the number of objects in the list.
 template<class Item> 
 long List<Item>::Count() const {
     return _count;
 }
 
+// Returns the object at the given index.
 // TODO:
 //   * solve warning 'control reaches end of non-void function'.
 //   * shouldn't the test be if (index < _count) ???
@@ -67,11 +73,13 @@ Item& List<Item>::Get(long index) const {
     }
 }
 
+// Returns the first object in the list.
 template<class Item> 
 Item& List<Item>::First() const {
     return Get(0);
 }
 
+// Returns the last object in the list.
 template<class Item> 
 Item& List<Item>::Last() const {
   return Get(Count()-1);
@@ -87,7 +95,7 @@ bool List<Item>::Includes(const Item& anItem) const {
     return false;
 }
 
-
+// Adds the argument to the list, making it the last element.
 template<class Item> 
 void List<Item>::Append(const Item& anItem) {
     if (_count <= _size) {
@@ -96,6 +104,7 @@ void List<Item>::Append(const Item& anItem) {
     }
 }
 
+// Adds the argument to the list, making it the first element.
 template<class Item> 
 void List<Item>::Prepend(const Item& anItem) {
     if (_count <= _size) {
@@ -106,6 +115,8 @@ void List<Item>::Prepend(const Item& anItem) {
     }
 }
 
+// Removes the given element from the list. This operation requires that the type of
+// elements in the list supports the == operator for comparison.
 template<class Item> 
 void List<Item>::Remove(const Item& anItem) {
     for (long i = 0; i < Count(); i++) {
@@ -115,32 +126,37 @@ void List<Item>::Remove(const Item& anItem) {
     }
 }
 
+// Removes the last element from the list.
 template<class Item> 
 void List<Item>::RemoveLast() {
     RemoveAt(Count()-1);
 }
 
+// Removes the first element from the list.
 template<class Item> 
 void List<Item>::RemoveFirst() {
     RemoveAt(0);
 }
 
+// Removes all elements from the list.
 template<class Item> 
 void List<Item>::RemoveAll() {
     _count = 0;
 }
 
-
+// Returns the top element (when the List is viewed as a stack).
 template<class Item> 
 Item& List<Item>::Top() const {
     return Last();
 }
 
+// Pushes the element onto the stack.
 template<class Item> 
 void List<Item>::Push(const Item& anItem) {
     Append(anItem);
 }
 
+// Pops the top element from the stack.
 template<class Item> 
 Item& List<Item>::Pop()
 {
