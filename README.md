@@ -76,3 +76,10 @@ You can also use CMake's `-j N` option for parallel builds on `N` cores and `-v`
 ```text
 ~/Design-Patterns-GoF$ cmake --build build -j 4 -v
 ```
+
+## Branches
+
+This repository has two branches:
+
+* The `master` branch has the code as it is given in the book plus extra code to make it compile and run.  All code that is in the book should be an exact subset of the code in the `master` branch, without *any* modifications.  If you spot differences, please let me know.
+* The book's code also has its flaws as can be seen when enabling compiler warnings and using static code analysis tools.  The `gof_improved` branch is exactly the same as the `master` branch, except that several code issues are fixed or improved, following best practices and always adhering the C++98 standard (which was the current standard at the time the book was written).  To see what fixes and improvements were applied, you can [compare the two branches](https://github.com/BartVandewoestyne/Design-Patterns-GoF/compare/master...gof_improved).
