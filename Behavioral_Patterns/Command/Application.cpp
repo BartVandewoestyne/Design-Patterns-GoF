@@ -6,5 +6,5 @@ class Document;
 
 void Application::Add(Document* doc)
 {
-    std::cout << "Application::Add(Document*)" << std::endl;
+    std::cout << "Adding document " << doc << " to the application." << std::endl;
 }
