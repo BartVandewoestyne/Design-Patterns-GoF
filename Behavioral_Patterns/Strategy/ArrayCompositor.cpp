@@ -4,12 +4,12 @@
 
 ArrayCompositor::ArrayCompositor(int interval)
 {
-    std::cout << "ArrayCompositor::ArrayCompositor()" << std::endl;
+    std::cout << "Constructing ArrayCompositor object with interval " << interval << "." << std::endl;
 }
 
 int ArrayCompositor::Compose(
-    Coord natural[], Coord stretch[], Coord shrink[],
-    int componentCount, int lineWidth, int breaks[]
+    Coord /*natural*/[], Coord /*stretch*/[], Coord /*shrink*/[],
+    int /*componentCount*/, int /*lineWidth*/, int /*breaks*/[]
 )
 {
     std::cout << "ArrayCompositor::Compose(...)" << std::endl;
