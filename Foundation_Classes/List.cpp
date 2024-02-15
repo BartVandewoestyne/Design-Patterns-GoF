@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include "ListIterator.h"
+#include <stdexcept>
 
 // Initializes the list.
 // The size parameter is a hint for the initial number of elements.
@@ -69,7 +70,7 @@ Item& List<Item>::Get(long index) const {
     if (_count <= _size) {
       return _items[index];
     } else {
-      // throw RangeError exception
+      throw std::out_of_range("Index out of range in List::Get");
     }
 }
 
