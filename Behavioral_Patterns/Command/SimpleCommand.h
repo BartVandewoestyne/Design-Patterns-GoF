@@ -13,8 +13,8 @@ public:
 
     virtual void Execute();
 private:
-    Action _action;
     Receiver* _receiver;
+    Action _action;
 };
 
 template<class Receiver>
