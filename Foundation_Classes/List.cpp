@@ -12,7 +12,18 @@ List<Item>::List(long size) : _size(size), _count(0) {
     _items = new Item[size]; 
 }
 
-// TODO: Copy constructor.
+// Overrides the default copy constructor so that member data are initialized properly.
+template<class Item>
+List<Item>::List(List& other) {
+    _size = other._size;
+    _count = other._count;
+
+    _items = new Item[_size];
+
+    for (long i = 0; i < _count; ++i) {
+        _items[i] = other._items[i];
+    }
+}
 
 template<class Item> 
 List<Item>::~List() {
