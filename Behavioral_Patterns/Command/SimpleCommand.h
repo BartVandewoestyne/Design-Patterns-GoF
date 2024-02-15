@@ -1,6 +1,8 @@
 #ifndef SIMPLE_COMMAND_H
 #define SIMPLE_COMMAND_H
 
+#include "Command.h"
+
 template <class Receiver>
 class SimpleCommand : public Command {
 public:
