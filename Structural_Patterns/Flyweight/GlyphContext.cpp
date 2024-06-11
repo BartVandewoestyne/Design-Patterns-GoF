@@ -9,8 +9,8 @@ GlyphContext::~GlyphContext()
 
 void GlyphContext::Next(int step)
 {
-    // TODO: increment _index as the traversal proceeds
-    // (see book page 202).
+    // Increment _index as the traversal proceeds (see book page 202).
+    _index += step;
 }
 
 void GlyphContext::Insert(int quantity1)
