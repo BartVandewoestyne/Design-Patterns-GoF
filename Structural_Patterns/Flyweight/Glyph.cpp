@@ -1,5 +1,7 @@
 #include "Glyph.h"
 
+#include "GlyphContext.h"
+
 #include <iostream>
 using namespace std;
 
@@ -23,10 +25,10 @@ void Glyph::SetFont(Font*, GlyphContext&)
     cout << "Glyph::SetFont(Font*, GlyphContext&)" << endl;
 }
 
-Font* Glyph::GetFont(GlyphContext&)
+Font* Glyph::GetFont(GlyphContext& context)
 {
     cout << "Glyph::GetFont(GlyphContext&)" << endl;
-    return 0;
+    return context.GetFont();
 }   
 
 void Glyph::First(GlyphContext&){   
